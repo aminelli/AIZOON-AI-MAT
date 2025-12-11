@@ -42,5 +42,5 @@ print(confusion)
 
 print("=====================================")
 print("classificatio")
-+print(classification_report(y_test, y_predict))
+print(classification_report(y_test, y_predict))
 
