@@ -21,3 +21,4 @@ eclf = VotingClassifier(
 for clf, label in zip([clf1, clf2, clf3, clf4, eclf], ['Logistic Regression', 'Random Forest', 'naive Bayes', 'SVM', 'Ensemble']):
      scores = cross_val_score(clf, X, y, scoring='accuracy', cv=5)
      print("Accuracy: %0.2f (+/- %0.2f) [%s]" % (scores.mean(), scores.std(), label))
+     
